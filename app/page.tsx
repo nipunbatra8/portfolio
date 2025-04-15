@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Github, Globe, Mail, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Analytics } from "@vercel/analytics/react"
 
 import Navbar from "./components/navbar"
 import ExperienceCard from "./components/experience-card"
@@ -10,6 +11,7 @@ import ProjectCard from "./components/project-card"
 export default function Page() {
   return (
     <div className="min-h-screen bg-background pt-14">
+      <Analytics/>
       <Navbar />
 
       {/* Hero Section */}
